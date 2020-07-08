@@ -1,0 +1,46 @@
+$navColor: #505F98;
+
+header{
+  width: 100vw;
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+
+  nav {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+    ul{
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        padding: 3px 4px;
+
+        a{
+          text-decoration: none;
+          color: $navColor;
+          font-size: 12px;
+          transition: all 1.5s linear;
+
+          &:hover{
+            font-weight: bold;
+            color: darken($navColor, 0.7);
+          }
+        }
+      }
+    }
+
+    div {
+      margin: 0 auto;
+
+      img{
+        max-height: 40px;
+        padding: 10px;
+      }
+    }
+  }
+}
