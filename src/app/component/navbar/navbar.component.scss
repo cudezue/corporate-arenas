@@ -24,11 +24,10 @@ header{
           text-decoration: none;
           color: $navColor;
           font-size: 12px;
-          transition: all 1.5s linear;
+          transition: all 500ms ease;
 
           &:hover{
             font-weight: bold;
-            color: darken($navColor, 0.7);
           }
         }
       }

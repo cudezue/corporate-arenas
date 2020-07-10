@@ -1,0 +1,256 @@
+.hero {
+  width: 100vw;
+  overflow-x: hidden;
+  margin-bottom: 2rem;
+
+  svg {
+    position: absolute;
+    max-height: 100vh;
+    width: auto;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      margin-bottom: 1.5rem;
+      color: #37447E
+    }
+
+    p {
+      font-size: 15px;
+      width: 60%;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      color: #505F98;
+    }
+
+    &__cta {
+      text-decoration: none;
+      background-color: #2DC76D;
+      color: white;
+      border-radius: 12px;
+      padding: 10px 25px;
+      transition: all 500ms ease;
+    }
+
+    &__cta:hover {
+      background-color: darken(#2DC76D, 10%);
+    }
+
+    &__illustration {
+      //margin-top: -2.5rem;
+      max-height: 25rem;
+    }
+  }
+}
+
+.research {
+  width: 100%;
+  background: linear-gradient(183.29deg, #FFFFFF 78.49%, #EEEEFF 120.83%);
+  padding: 4rem 2rem 4rem 8rem;
+  font-size: 12px;
+  color: #091133;
+
+  span {
+    position: absolute;
+    right: 6rem;
+    bottom: -7rem;
+    font-size: 18px;
+    color: #B6BDFC;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    align-items: center;
+    justify-items: center;
+
+    &__card {
+      width: 15rem;
+      height: 20rem;
+      max-height: 20rem;
+      padding: 10rem 1rem 1rem;
+      background: linear-gradient(30.03deg, #F1F3F6 -2.87%, #FFFFFF 99.99%);
+      box-shadow: 10px 10px 36px #E7ECFF, -10px -10px 16px #FFFFFF, inset 4px 4px 4px rgba(231, 236, 255, 0.25), inset -4px -4px 8px #FFFFFF;
+    }
+  }
+}
+
+.brain-teaser {
+  padding: 4rem 0;
+  width: 100%;
+
+  &__hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+
+    img {
+      max-height: 292px;
+    }
+
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+
+      span {
+        margin-top: 0.8rem;
+        width: 4rem;
+        display: block;
+        border-top: 4px solid #BE52F2;
+      }
+    }
+  }
+
+  &__img-slider {
+    width: 80%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+
+    &__controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      justify-items: center;
+
+      &__button {
+        outline: none;
+        padding: 0.5rem 2rem;
+        color: #6C63FF;
+        background-color: #FFFFFF;
+        border: 2px solid #B6BDFC;
+        border-radius: 10px;
+        transition: all 500ms ease;
+
+        &:hover {
+          color: #FFFFFF;
+          background-color: #6C63FF;
+          border: none;
+        }
+      }
+
+      &__list {
+        list-style-type: none;
+        display: flex;
+
+        li {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          display: block;
+          background-color: #C4C4C4;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+
+        li.active {
+          background-color: #F4E7FC;
+        }
+      }
+    }
+  }
+}
+
+.vacancy {
+  position: relative;
+
+  &__polka-dots {
+    position: absolute;
+    left: 0;
+    bottom: -7rem;
+  }
+
+  &__content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 7rem 4rem;
+    background: rgba(246, 232, 253, 0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h2 {
+      margin-bottom: 0.8rem;
+      width: 50%;
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    &__cta {
+      text-decoration: none;
+      margin: 4rem 0;
+      outline: none;
+      padding: 1rem 3rem;
+      color: #FFFFFF;
+      background-color: #2DC76D;
+      transition: all 500ms ease;
+      border-radius: 10px;
+      font-size: 18px;
+
+      &:hover {
+        background-color: darken(#2DC76D, 10%);
+      }
+    }
+  }
+}
+
+.traffic {
+  margin: 4rem 0;
+  width: 100%;
+  position: relative;
+
+  &__side {
+    position: absolute;
+    top: -1%;
+    right: 0;
+    z-index: -1;
+  }
+
+  &__hero {
+    width: 70%;
+    font-size: 16px;
+    color: #6F7CB2;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      text-align: center;
+      color: #091133;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      width: 70%;
+    }
+
+  }
+
+  &__illustrations {
+    display: flex;
+    justify-content: space-between;
+  }
+}
