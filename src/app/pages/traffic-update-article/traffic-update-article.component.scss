@@ -1,0 +1,63 @@
+.traffic_update {
+  width: 80%;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    margin-right: 2.5rem;
+  }
+
+  .summary {
+    align-self: end;
+    display: block;
+    flex-basis: 70%;
+
+
+    h2 {
+      text-align: left;
+      margin-bottom: 0.8rem;
+      letter-spacing: 2px;
+    }
+
+    p, a {
+      color: #031B06;
+      opacity: 0.6;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #B6BDFC;
+    }
+
+    p {
+      margin-bottom: 0.8rem;
+    }
+
+    .title {
+      opacity: 1;
+      color: #254AA5;
+    }
+
+    &__post-date {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: #7C98A6;
+      margin-bottom: 1.5rem;
+
+      svg {
+        margin-right: 0.2rem;
+        height: 12px;
+      }
+    }
+  }
+}
+
+.container {
+  width: 70%;
+  margin-left: 10%;
+  margin-bottom: 3rem;
+}

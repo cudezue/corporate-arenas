@@ -9,6 +9,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { BrainTeaserComponent } from './pages/brain-teaser/brain-teaser.component';
 import { NewsletterComponent } from './component/newsletter/newsletter.component';
+import { TrafficUpdateComponent } from './pages/traffic-update/traffic-update.component';
+import { TrafficUpdateArticleComponent } from './pages/traffic-update-article/traffic-update-article.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { BlogArticleComponent } from './pages/blog-article/blog-article.component';
+import { VacanciesComponent } from './pages/vacancies/vacancies.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { NewsletterComponent } from './component/newsletter/newsletter.component
     HomeComponent,
     ContactComponent,
     BrainTeaserComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    TrafficUpdateComponent,
+    TrafficUpdateArticleComponent,
+    BlogComponent,
+    BlogArticleComponent,
+    VacanciesComponent
   ],
   imports: [
     BrowserModule,

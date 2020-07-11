@@ -1,15 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
-*, *::after, *::before{
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   height: 100vh;
+}
+
+input,
+textarea {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn {
+  padding: 0.6rem 1rem;
+  margin-right: 0.4rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.answer-card {
+  box-shadow: 10px 10px 16px #dee4ed, -10px -10px 16px #ffffff,
+    inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #ffffff;
+  margin-bottom: 1rem;
+  font-size: 12px;
+  padding: 1rem;
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    .time {
+      color: #707c97;
+    }
+
+    &__user {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+
+      img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-right: 0.8rem;
+      }
+
+      &_details {
+        span {
+          color: #2a8bf2;
+        }
+      }
+    }
+  }
+}
+
+.answer-form {
+  width: 100%;
+  margin-top: 4rem;
+  box-shadow: 10px 10px 16px #dee4ed, -10px -10px 16px #ffffff,
+    inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #ffffff;
+  padding: 2rem;
+  display: flex;
+  justify-items: flex-start;
+  justify-content: start;
+  align-items: baseline;
+
+  form {
+    width: 50%;
+
+    .btn {
+      background-color: rgba(108, 99, 255, 0.25);
+      color: #6c63ff;
+    }
+
+    input,
+    textarea {
+      outline: none;
+      padding: 0.4rem 0.4rem;
+      border: 1px solid rgba(108, 99, 255, 0.42);
+      border-radius: 5px;
+      margin-bottom: 0.8rem;
+      width: 100%;
+
+      &::placeholder {
+        font-family: "Montserrat", sans-serif;
+      }
+    }
+  }
+
+  img {
+    margin-right: 0.8rem;
+  }
 }

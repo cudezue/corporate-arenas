@@ -62,14 +62,6 @@
   box-shadow: 4px 8px 15px rgba(219, 165, 245, 0.21);
 }
 
-.btn {
-  padding: 0.6rem 1rem;
-  margin-right: 0.4rem;
-  outline: none;
-  border: none;
-  border-radius: 10px;
-}
-
 .answer-btn {
   color: #6C63FF;
   background-color: rgba(108, 99, 255, 0.25);
@@ -88,81 +80,6 @@
 
 .view-btn:hover {
   background-color: darken(rgba(40, 188, 0, 0.25), 15%);
-}
-
-.answer-card {
-  box-shadow: 10px 10px 16px #DEE4ED, -10px -10px 16px #FFFFFF, inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #FFFFFF;
-  margin-bottom: 1rem;
-  font-size: 12px;
-  padding: 1rem;
-
-  .stats{
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    align-items: center;
-    margin-bottom: 1.5rem;
-
-    .time {
-      color: #707C97;
-    }
-
-    &__user {
-      display: flex;
-      justify-items: center;
-      align-items: center;
-
-      img {
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        margin-right: 0.8rem;
-      }
-
-      &_details {
-        span {
-          color: #2A8BF2;
-        }
-      }
-    }
-  }
-}
-
-.answer-form {
-  width: 100%;
-  margin-top: 4rem;
-  box-shadow: 10px 10px 16px #DEE4ED, -10px -10px 16px #FFFFFF, inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #FFFFFF;
-  padding: 2rem;
-  display: flex;
-  justify-items: flex-start;
-  justify-content: start;
-  align-items: baseline;
-
-  form {
-    width: 50%;
-
-    .btn {
-      background-color: rgba(108, 99, 255, 0.25);
-      color: #6C63FF;
-    }
-
-    input, textarea {
-      outline: none;
-      padding: 0.4rem 0.4rem;
-      border: 1px solid rgba(108, 99, 255, 0.42);
-      border-radius: 5px;
-      margin-bottom: 0.8rem;
-      width: 100%;
-
-      &::placeholder {
-        font-family: 'Montserrat', sans-serif;
-      }
-    }
-  }
-
-  img {
-    margin-right: 0.8rem;
-  }
 }
 
 
