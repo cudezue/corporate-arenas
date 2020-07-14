@@ -1,18 +1,22 @@
 $navColor: #505F98;
 
-header{
+header {
   width: 100vw;
   padding: 5px 0;
   display: flex;
   justify-content: center;
 
-  nav {
+  .mobile {
+    display: none;
+  }
+
+  .main {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
 
-    ul{
+    ul {
       list-style-type: none;
       display: flex;
       justify-content: space-around;
@@ -20,13 +24,13 @@ header{
       li {
         padding: 3px 4px;
 
-        a{
+        a {
           text-decoration: none;
           color: $navColor;
           font-size: 12px;
           transition: all 500ms ease;
 
-          &:hover{
+          &:hover {
             font-weight: bold;
           }
         }
@@ -36,10 +40,76 @@ header{
     div {
       margin: 0 auto;
 
-      img{
+      img {
         max-height: 40px;
         padding: 10px;
       }
     }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  header {
+    .main {
+      display: none;
+    }
+
+    .mobile {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        max-height: 40px;
+        padding: 10px;
+      }
+
+      button {
+        outline: none;
+        background: transparent;
+        padding: 0.3rem;
+        font-size: 20px;
+        border: 1px solid $navColor;
+        color: $navColor;
+      }
+
+      .menu-list {
+        position: absolute;
+        top: 40px;
+        right: -20px;
+        background: #FFFFFF;
+        display: none;
+
+        ul {
+          list-style-type: none;
+
+          li {
+            padding: 0.4rem 0.7rem;
+            border-bottom: 1px solid #cccccc;
+
+            a {
+              text-decoration: none;
+              color: $navColor;
+
+              &:hover {
+                font-weight: bold;
+              }
+            }
+
+            &:last-child {
+              border-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .menu-list.active {
+        display: block;
+      }
+    }
+
   }
 }

@@ -8,16 +8,18 @@
   }
 }
 
-.featured_traffic_update, .traffic_update {
+.traffic_update {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 3rem 1rem;
 
   img {
     margin-right: 2.5rem;
   }
 
   .summary {
+    flex-basis: 70%;
     align-self: end;
     display: block;
 
@@ -60,15 +62,8 @@
   }
 }
 
-.traffic_update {
-  margin: 3rem 1rem;
-  .summary {
-    flex-basis: 70%;
-  }
-}
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-  .traffic_update, .featured_traffic_update {
+  .traffic_update {
     max-height: 7rem;
     img {
       margin-right: 0.3rem;

@@ -1,5 +1,5 @@
 <header>
-  <nav>
+  <nav class="main">
     <ul>
       <li>
         <a routerLink="/">Home</a>
@@ -25,5 +25,36 @@
         <a routerLink="/contact">Contact</a>
       </li>
     </ul>
+  </nav>
+
+  <nav class="mobile">
+    <div>
+      <img src="/assets/corporate_arena.png" alt="">
+    </div>
+    <button (click)="toggleActive()">
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+    <div class="menu-list" [ngClass]="mobileMenuActive ? 'active' : ''">
+      <ul>
+        <li>
+          <a routerLink="/">Home</a>
+        </li>
+        <li>
+          <a routerLink="/vacancies">Vacancies</a>
+        </li>
+        <li>
+          <a routerLink="/traffic_updates">Traffic Updates</a>
+        </li>
+        <li>
+          <a routerLink="/brain_teasers">Brain Teasers</a>
+        </li>
+        <li>
+          <a routerLink="/blog">Articles</a>
+        </li>
+        <li>
+          <a routerLink="/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
