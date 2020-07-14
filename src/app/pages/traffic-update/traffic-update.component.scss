@@ -66,3 +66,39 @@
     flex-basis: 70%;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .traffic_update, .featured_traffic_update {
+    max-height: 7rem;
+    img {
+      margin-right: 0.3rem;
+      width: 100%;
+    }
+
+    .summary {
+      &__post-date{
+        display: none;
+      }
+
+      p {
+        display: none;
+      }
+      h2 {
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        -webkit-box-orient: vertical
+      }
+
+      a:last-child {
+        display: none;
+      }
+    }
+  }
+
+  .container {
+    width: 90%;
+  }
+}

@@ -82,4 +82,28 @@
   background-color: darken(rgba(40, 188, 0, 0.25), 15%);
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .brain-teaser {
+    &__hero {
+      width: 80%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__container {
+      padding: 2.5rem 1rem;
+    }
+  }
+
+  .answer-section {
+    padding: 0 !important;
+    .question-card {
+      margin: 0.1rem;
+    }
+  }
+
+}
+
 

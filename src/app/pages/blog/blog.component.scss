@@ -5,6 +5,7 @@
   h2 {
     text-align: center;
     margin-bottom: 2rem;
+    color: #254AA5;
   }
 }
 
@@ -97,6 +98,24 @@
     a {
       text-decoration: none;
       color: #B6BDFC;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .featured_blog {
+    display: none;
+  }
+
+  .blog__list {
+    display: block;
+  }
+
+  .blog__card {
+    margin-bottom: 3rem;
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

@@ -132,21 +132,21 @@ footer {
         display: flex;
         align-items: flex-start;
 
-        a{
+        a {
           text-decoration: none;
           color: $primary-font-color;
           margin-right: 0.8rem;
         }
 
-        a:last-child
-        {
+        a:last-child {
           margin-right: 0;
         }
       }
 
       .icon-list-primary {
         display: flex;
-        a{
+
+        a {
           text-decoration: none;
           color: $primary-font-color;
           margin-right: 1rem;
@@ -164,4 +164,39 @@ footer {
 h4 {
   font-size: 15px;
   margin-bottom: 0.8rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .secondary-footer {
+    display: none;
+  }
+
+  .primary-footer {
+
+    div {
+      width: 80%;
+
+      hr {
+        display: none;
+      }
+
+      .copyright-section {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .quick-nav-section {
+        display: block;
+
+        div {
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        .icon-list-primary {
+          display: none;
+        }
+      }
+    }
+  }
 }
