@@ -1,10 +1,10 @@
-<div class="brain-teaser">
-  <div class="brain-teaser__hero">
-    <h2>Brain Teaser</h2>
-    <img src="/assets/questions.svg" alt="">
+<div class="container my-5">
+  <div class="d-flex flex-column align-items-center">
+    <h2 class="font-weight-bold">Brain Teaser</h2>
+    <img src="/assets/questions.svg" alt="" class="img-fluid">
   </div>
 
-  <div class="brain-teaser__container">
+  <div class="container">
     <div class="question-card shadow">
       <div class="stats">
         <span>5 answers</span>
@@ -16,8 +16,8 @@
       <button class="btn view-btn">View Answers</button>
     </div>
 
-    <div class="answer-section">
-      <div class="question-card">
+    <div>
+      <div class="question-card mt-5">
         <div class="stats">
           <span>5 answers</span>
           <span>Posted 2 hours ago</span>
@@ -28,39 +28,45 @@
         <button class="btn view-btn">View Answers</button>
       </div>
 
-      <div class="answer-card">
-        <div class="stats">
-          <div class="stats__user">
-            <img src="/assets/mock_user_image.jpg" alt="">
-            <div class="stats__user_details">
-              <h4>Hauwa Edjukorlem</h4>
+      <div class="answer-card mb-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex">
+            <div class="user-image mr-3">
+              <img class="img-fluid" src="/assets/mock_user_image.jpg" alt="">
+            </div>
+            <div class="user">
+              <h4 class="font-weight-bold">Hauwa Edjukorlem</h4>
               <span>... writes</span>
             </div>
           </div>
           <span class="time">1 minute ago</span>
         </div>
-        <p>Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes)</p>
+        <p class="mt-3">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the
+          Boundaries of Goods and Evils; finibus may also be translated as purposes)</p>
       </div>
-      <div class="answer-card">
-        <div class="stats">
-          <div class="stats__user">
-            <img src="/assets/mock_user_image.jpg" alt="">
-            <div class="stats__user_details">
-              <h4>Hauwa Edjukorlem</h4>
+      <div class="answer-card mb-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex">
+            <div class="user-image mr-3">
+              <img class="img-fluid" src="/assets/mock_user_image.jpg" alt="">
+            </div>
+            <div class="user">
+              <h4 class="font-weight-bold">Hauwa Edjukorlem</h4>
               <span>... writes</span>
             </div>
           </div>
           <span class="time">1 minute ago</span>
         </div>
-        <p>Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes)</p>
+        <p class="mt-3">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the
+          Boundaries of Goods and Evils; finibus may also be translated as purposes)</p>
       </div>
 
-      <div class="answer-form">
-        <img src="/assets/user-icon.svg" alt="">
-        <form action="">
-          <div><input type="text" placeholder="Name"></div>
-          <div><textarea name="" id="" rows="10" placeholder="Your answer"></textarea></div>
-          <button class="btn">Submit Answer</button>
+      <div class="px-5 answer-box row d-flex">
+        <img src="/assets/user-icon.svg" alt="" class="img-fluid d-none d-md-block mr-3 col-2 align-self-baseline w-25 p-4 bg-white shadow-sm">
+        <form action="" class="col">
+          <div class="input mb-3 w-75"><input type="text" placeholder="Name"></div>
+          <div class="input w-75"><textarea name="" id="" rows="7" placeholder="Your answer"></textarea></div>
+          <button class="btn">Submit</button>
         </form>
       </div>
     </div>

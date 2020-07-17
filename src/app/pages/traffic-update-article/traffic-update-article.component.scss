@@ -4,31 +4,4 @@
   h2 {
     color: #254AA5;
   }
-
-  .answer-box {
-    box-shadow: 4px 4px 40px rgba(238, 238, 255, 0.5);
-    padding: 3rem;
-    margin: 5rem 0;
-
-    .input {
-      background: #FFFFFF;
-      border: 1px solid rgba(108, 99, 255, 0.42);
-      box-sizing: border-box;
-      border-radius: 5px;
-      font-size: 15px;
-      padding: 0.8rem 0.4rem;
-      input, textarea {
-        outline: none;
-        border: 0;
-        background: transparent;
-      }
-    }
-
-    .btn {
-      background: rgba(108, 99, 255, 0.25);
-      border-radius: 10px;
-      color: #6C63FF;
-      margin-top: 20px;
-    }
-  }
 }
