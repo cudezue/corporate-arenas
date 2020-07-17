@@ -1,57 +1,55 @@
 <header>
-  <nav class="main">
-    <ul>
-      <li>
+  <nav class="d-md-flex align-items-center d-none justify-content-between align-items-center main">
+    <ul class="list-unstyled d-flex align-items-center">
+      <li class="p-4">
         <a routerLink="/">Home</a>
       </li>
-      <li>
+      <li class="p-4">
         <a routerLink="/vacancies">Vacancies</a>
       </li>
-      <li>
+      <li class="p-4">
         <a routerLink="/traffic_updates">Traffic Updates</a>
       </li>
     </ul>
     <div>
-      <img src="/assets/corporate_arena.png" alt="">
+      <img src="/assets/corporate_arena.png" alt="" class="img-fluid" style="max-height: 4rem">
     </div>
-    <ul>
-      <li>
+    <ul class="list-unstyled d-flex align-items-center">
+      <li class="p-4">
         <a routerLink="/brain_teasers">Brain Teasers</a>
       </li>
-      <li>
+      <li class="p-4">
         <a routerLink="/blog">Articles</a>
       </li>
-      <li>
+      <li class="p-4">
         <a routerLink="/contact">Contact</a>
       </li>
     </ul>
   </nav>
 
-  <nav class="mobile">
+  <nav class="mobile d-sm-flex align-items-center d-none d-md-none justify-content-between align-items-center">
     <div>
-      <img src="/assets/corporate_arena.png" alt="">
+      <img src="/assets/corporate_arena.png" alt="" class="img-fluid" style="max-height: 4rem">
     </div>
-    <button (click)="toggleActive()">a
-<!--      <ion-icon name="menu-outline"></ion-icon>-->
-    </button>
-    <div class="menu-list" [ngClass]="mobileMenuActive ? 'active' : ''">
-      <ul>
-        <li>
+    <button (click)="toggleActive()" class="btn p-3"><i class="fas fa-bars fa-2x"></i></button>
+    <div class="menu p-4" [ngClass]="mobileMenuActive ? 'd-block' : 'd-none' ">
+      <ul class="list-unstyled d-flex flex-column align-items-center">
+        <li class="py-4">
           <a routerLink="/">Home</a>
         </li>
-        <li>
+        <li class="py-4">
           <a routerLink="/vacancies">Vacancies</a>
         </li>
-        <li>
+        <li class="py-4">
           <a routerLink="/traffic_updates">Traffic Updates</a>
         </li>
-        <li>
+        <li class="py-4">
           <a routerLink="/brain_teasers">Brain Teasers</a>
         </li>
-        <li>
+        <li class="py-4">
           <a routerLink="/blog">Articles</a>
         </li>
-        <li>
+        <li class="py-4">
           <a routerLink="/contact">Contact</a>
         </li>
       </ul>

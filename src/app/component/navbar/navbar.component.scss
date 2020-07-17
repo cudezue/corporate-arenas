@@ -1,115 +1,37 @@
 $navColor: #505F98;
 
-header {
-  width: 100vw;
-  padding: 5px 0;
-  display: flex;
-  justify-content: center;
+.main {
+  padding: 1rem 5rem;
+  a {
+    color: $navColor;
+    text-decoration: none;
+  }
+}
 
-  .mobile {
-    display: none;
+.mobile {
+  padding: 1rem 2rem;
+  position: relative;
+
+  button {
+    background: none;
+    border: 2px solid $navColor;
+    color: $navColor;
   }
 
-  .main {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+  .menu {
+    position: absolute;
+    right: 0;
+    top: 7rem;
+    width: 40vw;
+    background-color: white;
+    li {
+      border-bottom: 2px solid lighten($navColor, 10%);
+      width: 100%;
 
-    ul {
-      list-style-type: none;
-      display: flex;
-      justify-content: space-around;
-
-      li {
-        padding: 3px 4px;
-
-        a {
-          text-decoration: none;
-          color: $navColor;
-          font-size: 12px;
-          transition: all 500ms ease;
-
-          &:hover {
-            font-weight: bold;
-          }
-        }
-      }
-    }
-
-    div {
-      margin: 0 auto;
-
-      img {
-        max-height: 40px;
-        padding: 10px;
+      &:last-child {
+        border: none;
       }
     }
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-  header {
-    .main {
-      display: none;
-    }
-
-    .mobile {
-      display: flex;
-      width: 80%;
-      margin: 0 auto;
-      position: relative;
-      justify-content: space-between;
-      align-items: center;
-
-      img {
-        max-height: 40px;
-        padding: 10px;
-      }
-
-      button {
-        outline: none;
-        background: transparent;
-        padding: 0.3rem;
-        font-size: 20px;
-        border: 1px solid $navColor;
-        color: $navColor;
-      }
-
-      .menu-list {
-        position: absolute;
-        top: 40px;
-        right: -20px;
-        background: #FFFFFF;
-        display: none;
-
-        ul {
-          list-style-type: none;
-
-          li {
-            padding: 0.4rem 0.7rem;
-            border-bottom: 1px solid #cccccc;
-
-            a {
-              text-decoration: none;
-              color: $navColor;
-
-              &:hover {
-                font-weight: bold;
-              }
-            }
-
-            &:last-child {
-              border-bottom: 0;
-            }
-          }
-        }
-      }
-
-      .menu-list.active {
-        display: block;
-      }
-    }
-
-  }
-}

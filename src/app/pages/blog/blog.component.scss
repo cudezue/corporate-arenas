@@ -10,15 +10,11 @@
 }
 
 .featured_blog {
-  width: 100%;
-  display: flex;
-
   .summary {
     background: linear-gradient(180deg, rgba(182, 189, 252, 0.25) 0%, rgba(104, 225, 253, 0.07) 100%);
     padding: 3rem;
     h2 {
       margin-bottom: 0.8rem;
-      text-align: justify;
     }
 
     p, a {
@@ -53,13 +49,6 @@
   }
 }
 
-.blog__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 80%;
-  margin: 2rem auto;
-  grid-gap: 20px;
-}
 
 .blog__card {
   padding: 0.8rem;
@@ -98,24 +87,6 @@
     a {
       text-decoration: none;
       color: #B6BDFC;
-    }
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-  .featured_blog {
-    display: none;
-  }
-
-  .blog__list {
-    display: block;
-  }
-
-  .blog__card {
-    margin-bottom: 3rem;
-
-    &:last-child {
-      margin-bottom: 0;
     }
   }
 }

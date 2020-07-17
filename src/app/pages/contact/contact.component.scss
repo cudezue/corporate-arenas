@@ -1,127 +1,131 @@
-.contact {
-  width: 100%;
+//.contact {
+//  width: 100%;
+//
+//  &__hero {
+//    padding-top: 3rem;
+//    padding-bottom: 1rem;
+//    width: 90%;
+//    margin: 0 auto;
+//    display: grid;
+//    grid-template-columns: 1fr 2fr;
+//    grid-gap: 70px;
+//    justify-items: center;
+//    align-items: center;
+//
+//    h1 {
+//      color: #182B82;
+//    }
+//
+//    img {
+//      max-height: 70%;
+//    }
+//  }
+//
+//  &__form__section {
+//    display: flex;
+//    align-items: center;
+//    align-content: space-between;
+//
+//    &__container {
+//      flex-basis: 85%;
+//      margin-right: 4rem;
+//      padding: 4rem 7rem;
+//      margin-bottom: 4rem;
+//
+//      &__heading {
+//        display: flex;
+//        align-content: center;
+//        justify-items: center;
+//        align-items: center;
+//        padding-bottom: 1rem;
+//        color: #182B82;
+//
+//        h3 {
+//          margin-left: 0.8rem;
+//        }
+//      }
+//
+//      form {
+//        .input {
+//          background: #FFFFFF;
+//          box-shadow: 10px 10px 16px #DEE4ED, -10px -10px 16px #FFFFFF, inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #FFFFFF;
+//          border-radius: 10px;
+//          padding: 0.8rem 0.5rem;
+//          margin-bottom: 0.8rem;
+//
+//          input, textarea {
+//            outline: none;
+//            background-color: transparent;
+//            border: 0;
+//            width: 100%;
+//
+//            &::placeholder {
+//              font-family: 'Montserrat', sans-serif;
+//            }
+//          }
+//        }
+//
+//        input[type=submit] {
+//          outline: none;
+//          width: 100%;
+//          color: #FFFFFF;
+//          background-color: #6F5ED8;
+//          border-radius: 10px;
+//          padding: 0.8rem 0;
+//
+//          &::placeholder {
+//            font-family: 'Montserrat', sans-serif;
+//          }
+//        }
+//
+//        input[type=submit]:hover {
+//          background-color: darken(#6F5ED8, 15%);
+//        }
+//      }
+//    }
+//  }
+//}
 
-  &__hero {
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 70px;
-    justify-items: center;
-    align-items: center;
-
-    h1 {
-      color: #182B82;
-    }
-
-    img {
-      max-height: 70%;
-    }
-  }
-
-  &__form__section {
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-
-    &__container {
-      flex-basis: 85%;
-      margin-right: 4rem;
-      padding: 4rem 7rem;
-      margin-bottom: 4rem;
-
-      &__heading {
-        display: flex;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        padding-bottom: 1rem;
-        color: #182B82;
-
-        h3 {
-          margin-left: 0.8rem;
-        }
-      }
-
-      form {
-        .input {
-          background: #FFFFFF;
-          box-shadow: 10px 10px 16px #DEE4ED, -10px -10px 16px #FFFFFF, inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #FFFFFF;
-          border-radius: 10px;
-          padding: 0.8rem 0.5rem;
-          margin-bottom: 0.8rem;
-
-          input, textarea {
-            outline: none;
-            background-color: transparent;
-            border: 0;
-            width: 100%;
-
-            &::placeholder {
-              font-family: 'Montserrat', sans-serif;
-            }
-          }
-        }
-
-        input[type=submit] {
-          outline: none;
-          width: 100%;
-          color: #FFFFFF;
-          background-color: #6F5ED8;
-          border-radius: 10px;
-          padding: 0.8rem 0;
-
-          &::placeholder {
-            font-family: 'Montserrat', sans-serif;
-          }
-        }
-
-        input[type=submit]:hover {
-          background-color: darken(#6F5ED8, 15%);
-        }
-      }
-    }
+.hero {
+  margin-top: 7rem;
+  h1 {
+    color: #182B82;
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-  .contact {
-    &__hero {
-      display: flex;
-      flex-direction: column;
+.contact {
+  margin: 7rem auto 4rem auto;
+  .heading {
+    color: #182B82;
+  }
+  .form {
+    box-shadow: 10px 10px 16px #DEE4ED, -10px -10px 16px #FFFFFF, inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #FFFFFF;
+    border-radius: 10px;
+    padding: 4rem;
 
-      h1 {
-        font-size: 25px;
-        text-align: center;
-      }
+    .input {
+      box-shadow: 10px 10px 16px #DEE4ED, -10px -10px 16px #FFFFFF, inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #FFFFFF;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 2rem;
 
-      img {
-        margin-top: -3rem;
-        max-width: 80%;
-        align-self: center;
+      input, textarea {
+        outline: none;
+        background: none;
+        width: 100%;
+        border: none;
       }
     }
 
-    &__form__section {
-      display: block;
-      position: relative;
-      margin-top: 3rem;
+    button[type=submit] {
+      background: #6F5ED8;
+      border-radius: 10px;
+      color: white;
+      padding: 1rem 1.5rem;
 
-      img {
-        position: absolute;
-        left: 0;
-        top: 20%;
-        z-index: -1;
-        width: 90%;
-        max-height: 75%;
-      }
-
-      &__container {
-        width: 80%;
-        padding: 0;
-        margin: 0 auto;
+      &:hover {
+        background: darken(#6F5ED8, 5%);
+        font-weight: bold;
       }
     }
   }
