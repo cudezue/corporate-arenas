@@ -1,99 +1,11 @@
-.container{
-  width: 80%;
-  margin: 4rem auto;
+.container {
+  color: #7C98A6;
 
-  h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-}
-
-.traffic_update {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 3rem 1rem;
-
-  img {
-    margin-right: 2.5rem;
+  .title, h2 {
+    color: #000000;
   }
 
-  .summary {
-    flex-basis: 70%;
-    align-self: end;
-    display: block;
-
-
-    h2 {
-      text-align: left;
-      margin-bottom: 0.8rem;
-      letter-spacing: 2px;
-    }
-
-    p, a {
-      color: #031B06;
-      opacity: 0.6;
-      font-size: 16px;
-      line-height: 26px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #B6BDFC;
-    }
-
-    .title {
-      opacity: 1;
-      color: #254AA5;
-    }
-
-    &__post-date {
-      display: flex;
-      align-items: center;
-      font-size: 12px;
-      color: #7C98A6;
-      margin-bottom: 1.5rem;
-
-      svg {
-        margin-right: 0.2rem;
-        height: 12px;
-      }
-    }
-  }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-  .traffic_update {
-    max-height: 7rem;
-    img {
-      margin-right: 0.3rem;
-      width: 100%;
-    }
-
-    .summary {
-      &__post-date{
-        display: none;
-      }
-
-      p {
-        display: none;
-      }
-      h2 {
-        font-size: 12px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3; /* number of lines to show */
-        -webkit-box-orient: vertical
-      }
-
-      a:last-child {
-        display: none;
-      }
-    }
-  }
-
-  .container {
-    width: 90%;
+  a {
+    color: #7C98A6;
   }
 }

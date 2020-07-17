@@ -1,253 +1,82 @@
-.vacancy-search {
-  width: 70%;
-  margin: 5rem auto;
-
+.search-section {
   h1 {
-    text-align: center;
-    margin-bottom: 1rem;
+    font-weight: 700;
   }
 
-  form {
-    display: flex;
-    justify-content: center;
+  .input {
+    box-shadow: 10px 10px 16px #dee4ed, -10px -10px 16px #ffffff,
+    inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #ffffff;
+    border-radius: 10px;
+    padding: 0.9rem;
+    margin-right: 1rem;
 
-    .input {
-      box-shadow: 10px 10px 16px #dee4ed, -10px -10px 16px #ffffff,
-        inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #ffffff;
+    input {
+      outline: none;
+      background-color: transparent;
+      border: 0;
+      font-size: 27px;
+      height: 100%;
+    }
+
+    .btn-purple {
+      background-color: #6f5ed8;
       border-radius: 10px;
-      padding: 1rem 0.6rem;
-      width: 20rem;
-      margin-right: 1rem;
+      transition: all 500ms ease;
+      color: white;
+      margin-left: 0.4rem;
 
-      input {
-        outline: none;
-        background-color: transparent;
-        border: 0;
-        font-size: 17px;
-        height: 100%;
-      }
-    }
-
-    .input:last-child {
-      margin-right: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      button {
-        margin-left: 0.5rem;
-        padding: 0.43rem;
-        border: 0;
-        background-color: #6f5ed8;
-        border-radius: 10px;
-        transition: all 500ms ease;
-
-        &:hover {
-          background-color: darken(#6f5ed8, 10%);
-        }
+      &:hover {
+        background-color: darken(#6f5ed8, 10%);
       }
     }
   }
 }
 
-.vacancy-container {
-  width: 100%;
-  padding: 5rem 0;
+.featured-jobs {
   background: linear-gradient(183.29deg, #ffffff 78.49%, #eeeeff 120.83%);
-
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-
-    .vacancy-list {
-      display: flex;
-      overflow-x: auto;
-      align-items: center;
-
-      .vacancy-card {
-        min-width: 15rem;
-        height: 20rem;
-        background: linear-gradient(30.03deg, #f1f3f6 -2.87%, #ffffff 99.99%);
-        box-shadow: 10px 10px 36px #e7ecff, -10px -10px 16px #ffffff,
-          inset 4px 4px 4px rgba(231, 236, 255, 0.25),
-          inset -4px -4px 8px #ffffff;
-        border-radius: 10px;
-        padding: 1rem;
-        font-size: 12px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-right: 1rem;
-
-        h5 {
-          color: #be52f2;
-        }
-
-        p {
-          color: #031b06;
-          opacity: 0.6;
-        }
-
-        .company {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          .logo {
-            border-radius: 50%;
-            padding: 0.6rem;
-            background: #ffffff;
-          }
-
-          span {
-            padding: 0.2rem;
-            background-color: #eeeff5;
-            color: #00adef;
-          }
-        }
-
-        .vacancy-post-details {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          span {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            svg {
-              margin-right: 0.6rem;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-.job-category {
-  width: 80%;
-  margin: 4rem auto;
+  padding: 3rem 0;
 
   h2 {
-    color: #37447e;
-    margin-bottom: 2rem;
+    color: #37447E;
   }
 
-  .categories {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
+  .featured-jobs-list {
+    padding: 0.8rem;
+    overflow-x: scroll;
 
-    .category {
-      display: flex;
-      flex-direction: column;
-      transition: all 500ms ease-in;
-
-      svg {
-        max-height: 3rem;
-        max-width: 3rem;
-      }
-
-      h4 {
-        margin: 0.8rem 0;
-      }
-
-      padding: 1rem;
-      margin-bottom: 2rem;
-      font-size: 12px;
-    }
-  }
-}
-
-.job-type-container {
-  width: 100%;
-  background: linear-gradient(
-    355.28deg,
-    rgba(245, 188, 186, 0.22) 10.39%,
-    rgba(235, 206, 250, 0.2) 72.43%
-  );
-
-  div {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 4rem auto;
-
-    .job-type {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      padding: 1rem;
-      background: #ffffff;
-      border: 1px solid #dee4ed;
+    .job-card {
+      background: linear-gradient(30.03deg, #F1F3F6 -2.87%, #FFFFFF 99.99%);
+      box-shadow: 10px 10px 36px #E7ECFF, -10px -10px 16px #FFFFFF, inset 4px 4px 4px rgba(231, 236, 255, 0.25), inset -4px -4px 8px #FFFFFF;
       border-radius: 10px;
-      font-size: 12px;
-      height: 15rem;
+      min-width: 20rem;
+      height: 25rem;
+      margin-right: 20px;
 
-      p {
-        margin: 1rem 0;
+      .vacancy-type {
+        padding: 0.4rem;
+        background-color: #eeeff5;
+        color: #00adef;
       }
 
-      a {
-        text-decoration: none;
-        align-self: flex-end;
-        color: #9c58d4;
+      h5 {
+        color: #be52f2;
       }
     }
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-  .vacancy-search {
-    width: 80%;
-    margin: 2rem auto;
+.job-type-section {
+  padding: 4rem 0;
+  background: linear-gradient(355.28deg, rgba(245, 188, 186, 0.22) 10.39%, rgba(235, 206, 250, 0.2) 72.43%);
 
-    form {
-      display: block;
-
-      .input {
-        margin-bottom: 0.8rem;
-        margin-right: 0;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
+  .job-type-card {
+    p {
+      color: #031B06;
+      opacity: 0.6;
     }
-  }
 
-  .vacancy-container {
-    .container {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      .vacancy-list {
-        width: 100%;
-        padding: 4rem;
-      }
-    }
-  }
-
-  .job-category {
-    .categories {
-      display: block;
-    }
-  }
-
-  .job-type-container {
-    padding: 1rem 0;
-    div {
-      display: block;
-
-      .job-type {
-        margin-bottom: 0.2rem !important;
-      }
+    a {
+      color: #9C58D4;
     }
   }
 }

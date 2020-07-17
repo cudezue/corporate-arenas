@@ -1,126 +1,119 @@
-<div class="hero">
-  <svg
-    width="1112"
-    height="1103"
-    viewBox="0 0 1112 1103"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      opacity="0.5"
-      d="M318.337 29.6196C198.401 130.055 179.815 319.973 98.5871 460.081C70.3109 508.834 33.7742 552.466 14.7116 606.551C-29.053 730.347 31.1796 870.772 111.799 969.096C150.241 1016 195.144 1058.97 249.473 1078.74C291.252 1093.95 336.049 1094.58 380.025 1094.98L1150.47 1102.9C1236.49 1103.77 1332.07 1100.63 1393.92 1034.27C1436.54 988.576 1453.86 921.848 1468.55 858.155C1486.61 779.892 1502.97 694.898 1474.88 620.356C1442.79 535.071 1361.64 486.741 1311.23 413.15C1229.42 293.92 1231.3 113.584 1127.12 18.4014C1078.48 -26.0226 1014.31 -43.4438 951.771 -52.1544C833.874 -68.5989 722.199 -37.5576 606.42 -41.8865C507.454 -45.5819 400.438 -39.1413 318.337 29.6196Z"
-      fill="#E7ECFF"
-    />
-  </svg>
-
-  <div class="hero__content">
-    <h1>Job Vacancies | Traffic Updates &amp; Articles</h1>
-    <p>
+<div class="container mx-auto py-5">
+  <div class="d-flex flex-column justify-content-between align-items-center hero">
+    <h1 class="text-center">Job Vacancies | Traffic Updates &amp; Articles</h1>
+    <p class="text-justify w-75 mx-auto">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
       culpa dolor eaque eum placeat ratione reprehenderit sunt, veritatis
       voluptates voluptatum.
     </p>
-    <a href="" class="hero__content__cta">Get Started</a>
+    <a routerLink="/vacancies" class="btn btn-success">Get Started</a>
     <img
       src="/assets/home_hero_illustration.svg"
       alt=""
-      class="hero__content__illustration"
+      class="illustration img-fluid"
     />
   </div>
 </div>
 
-<div class="research">
-  <span>see more <img src="/assets/see-more.svg" alt="" /></span>
-  <div class="research__content">
-    <h1>Today's Research, Tomorrow's Innovation</h1>
-    <div class="research__content__card">
-      <img src="/assets/research.svg" alt="" />
-      <h4>Title goes here</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-        culpa doloremque eaque inventore ipsam magnam omnis, repellat voluptate!
-        Nulla, tempora!
-      </p>
-    </div>
-    <div class="research__content__card">
-      <img src="/assets/research.svg" alt="" />
-      <h4>Title goes here</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-        culpa doloremque eaque inventore ipsam magnam omnis, repellat voluptate!
-        Nulla, tempora!
-      </p>
-    </div>
-    <div class="research__content__card">
-      <img src="/assets/research.svg" alt="" />
-      <h4>Title goes here</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-        culpa doloremque eaque inventore ipsam magnam omnis, repellat voluptate!
-        Nulla, tempora!
-      </p>
+<div class="container-fluid research-section my-3 py-4">
+  <div class="container">
+    <div class="row py-4">
+      <div class="col-md-3 col-sm-12">
+        <h1 class="mb-5">Today's Research, Tomorrow's Innovation</h1>
+      </div>
+      <div class="col-md-9 col-sm-12 research-list d-flex">
+        <div class="research-card">
+          <img src="/assets/research.svg" alt="" />
+          <h4>Title goes here</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+            culpa doloremque eaque inventore ipsam magnam omnis, repellat voluptate!
+            Nulla, tempora!
+          </p>
+        </div>
+        <div class="research-card">
+          <img src="/assets/research.svg" alt="" />
+          <h4>Title goes here</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+            culpa doloremque eaque inventore ipsam magnam omnis, repellat voluptate!
+            Nulla, tempora!
+          </p>
+        </div>
+        <div class="research-card">
+          <img src="/assets/research.svg" alt="" />
+          <h4>Title goes here</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+            culpa doloremque eaque inventore ipsam magnam omnis, repellat voluptate!
+            Nulla, tempora!
+          </p>
+        </div>
+        <div class="research-card">
+          <img src="/assets/research.svg" alt="" />
+          <h4>Title goes here</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+            culpa doloremque eaque inventore ipsam magnam omnis, repellat voluptate!
+            Nulla, tempora!
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="brain-teaser">
-  <div class="brain-teaser__hero">
-    <img src="/assets/brain_teaser_left_img.svg" alt="" />
-    <div class="brain-teaser__hero__heading">
-      <h2>Brain Teaser</h2>
-      <h4>How it works</h4>
+<div class="container-fluid brain-teaser-section my-4">
+  <div class="hero d-flex justify-content-between align-items-center">
+    <img src="/assets/brain_teaser_left_img.svg" alt="" class="img-fluid d-sm-none d-md-block"/>
+    <div class="heading d-flex flex-column flex-sm-fill">
+      <h2 class="text-center mb-3">Brain Teaser</h2>
+      <h4 class="text-center mb-2">How it works</h4>
       <span></span>
     </div>
-    <img src="/assets/brain_teaser_right_img.svg" alt="" />
+    <img src="/assets/brain_teaser_right_img.svg" alt="" class="img-fluid d-sm-none d-md-block"/>
   </div>
-  <div class="brain-teaser__img-slider">
-    <img src="/assets/teaser.svg" alt="" />
-    <div class="brain-teaser__img-slider__controls">
-      <button class="brain-teaser__img-slider__controls__button">
-        Previous
-      </button>
-      <ul class="brain-teaser__img-slider__controls__list">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <button class="brain-teaser__img-slider__controls__button">Next</button>
+
+  <div class="container">
+    <div class="d-flex flex-column img-slider">
+      <img src="/assets/teaser.svg" alt="" class="img-fluid">
+
+      <div class="d-flex justify-content-between align-items-center controls">
+        <button class="btn">Previous</button>
+        <ul>
+          <li class="active mr-3"></li>
+          <li class="mr-3"></li>
+          <li></li>
+        </ul>
+        <button class="btn">Next</button>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="vacancy">
-  <div class="vacancy__content">
-    <h2>Find vacancies from to Companies in the world</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus enim
-      itaque laudantium neque officia possimus reiciendis unde. Aliquam at
-      consequuntur eos et eveniet necessitatibus officiis porro praesentium,
-      quod saepe temporibus!
-    </p>
-    <a routerLink="/vacancies" class="vacancy__content__cta"
-      >VIEW JOB VACANCIES</a
-    >
-    <img src="/assets/job-flow.svg" alt="" />
+<div class="container-fluid vacancy-section">
+  <div class="container">
+    <div class="d-flex flex-column content align-items-center justify-content-between">
+      <h2 class="text-center">Find vacancies from to Companies in the world</h2>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque, dolor fugit illo incidunt labore magni non odit quis reprehenderit.</p>
+      <a routerLink="/vacancies" class="btn btn-success mt-3">VIEW JOB VACANCIES</a>
+      <img src="/assets/job-flow.svg" alt="" class="img-fluid mt-5">
+    </div>
   </div>
-  <img src="/assets/polka_dots.svg" alt="" class="vacancy__polka-dots" />
+  <img src="/assets/polka_dots.svg" alt="" class="img-fluid polka-dots d-md-none d-lg-block" />
 </div>
 
-<div class="traffic">
-  <img class="traffic__side" src="/assets/path.svg" alt="" />
-  <div class="traffic__hero">
-    <h2>Traffic News one click away</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid
-      dolorum libero minus necessitatibus saepe voluptates. Assumenda aut cumque
-      dolorum eos exercitationem fugit impedit iste placeat praesentium rem.
-      Distinctio dolores nemo officiis optio perspiciatis tempore.
-    </p>
+<div class="container-fluid traffic-update-section">
+  <div class="container">
+    <div class="d-flex flex-column content align-items-center justify-content-between">
+      <h2 class="text-center">Traffic News one click away</h2>
+      <p class="text-justify w-75 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque, dolor fugit illo incidunt labore magni non odit quis reprehenderit.</p>
+    </div>
+
+    <div class="row d-flex justify-content-between align-items-center">
+      <div class="col-md-6 col-sm-12 mb-4"><img src="/assets/world_connected.svg" alt="" class="img-fluid"></div>
+      <div class="col-md-6 col-sm-12"><img src="/assets/traffic_illustration.svg" alt="" class="img-fluid"></div>
+    </div>
   </div>
-  <div class="traffic__illustrations">
-    <img src="/assets/world_connected.svg" alt="" /><img
-      src="/assets/traffic_illustration.svg"
-      alt=""
-    />
-  </div>
+<!--  <img class="illustration img-fluid w-75 h-75" src="/assets/path.svg" alt="" />-->
 </div>

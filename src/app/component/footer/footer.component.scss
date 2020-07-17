@@ -1,202 +1,69 @@
-$font-color: #1F2431;
-$primary-font-color: #939EA4;
+.logo {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 0.2rem 0.4rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 500ms ease;
+}
 
-footer {
-  width: 100vw;
-  font-size: 12px;
-  color: $font-color;
+.facebook {
+  background-color: #272EAE;
+
+  &:hover {
+    background-color: darken(#272EAE, 10%);
+    color: #FFFFFF;
+  }
+}
+
+.twitter {
+  background-color: #1590D8;
+
+  &:hover {
+    background-color: darken(#1590D8, 10%);
+    color: #FFFFFF;
+  }
+}
+
+.youtube {
+  background-color: #D0021B;
+
+  &:hover {
+    background-color: darken(#D0021B, 10%);
+    color: #FFFFFF;
+  }
+}
+
+.dribble {
+  background-color: #F53E6A;
+
+  &:hover {
+    background-color: darken(#F53E6A, 10%);
+    color: #FFFFFF;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #1F2431;
 }
 
 .secondary-footer {
-  width: 100%;
-  padding: 4rem 4rem;
+  padding: 6rem 0;
   background-image: url("/assets/footer-bg.svg");
   background-position: center center;
   background-repeat: no-repeat;
-
-  div {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-
-    section {
-      margin: 0 auto;
-    }
-
-    .about-section {
-      .logo {
-        margin-bottom: 0.8rem;
-      }
-
-      p {
-        text-align: justify-all;
-      }
-
-      .icon-list {
-        margin-top: 1.2rem;
-        font-size: 15px;
-        justify-self: center;
-
-        a {
-          text-decoration: none;
-          padding: 5px;
-          margin-right: 6px;
-          color: white;
-          border-radius: 50%;
-          text-align: center;
-        }
-
-        a:first-child {
-          background-color: #272EAE;
-        }
-
-        a:nth-child(2) {
-          background-color: #1590D8;
-        }
-
-        a:nth-child(3) {
-          background-color: #D0021B;
-        }
-
-        a:nth-child(4) {
-          background-color: #F53E6A;
-        }
-      }
-    }
-
-    .quick-links-section {
-      ul {
-        list-style-type: none;
-
-        li {
-          margin-bottom: 0.3rem;
-
-          a {
-            text-decoration: none;
-            color: $font-color;
-          }
-        }
-      }
-    }
-
-    .contact-section {
-      a {
-        text-decoration: none;
-        color: $font-color;
-        display: block;
-        margin-bottom: 0.3rem;
-      }
-    }
-
-    .t-and-c-section {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-
-      a {
-        text-decoration: none;
-        color: $font-color;
-      }
-    }
-  }
+  background-size: cover;
 }
 
 .primary-footer {
   background-color: #E7ECFF;
-  color: $primary-font-color;
-  padding-top: 4rem;
-
-  div {
-    width: 70%;
-    margin: 0 auto;
-
-    .copyright-section {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      margin-bottom: 2rem;
-      align-items: center;
-    }
-
-    hr {
-      margin: 2rem 0;
-      color: #CDD1D4;
-    }
-
-    .quick-nav-section {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0.8rem;
-
-      div:first-child {
-        display: flex;
-        align-items: flex-start;
-
-        a {
-          text-decoration: none;
-          color: $primary-font-color;
-          margin-right: 0.8rem;
-        }
-
-        a:last-child {
-          margin-right: 0;
-        }
-      }
-
-      .icon-list-primary {
-        display: flex;
-
-        a {
-          text-decoration: none;
-          color: $primary-font-color;
-          margin-right: 1rem;
-          font-size: 16px;
-        }
-      }
-    }
-  }
+  padding: 2rem;
 }
 
-.logo {
-  max-height: 25px;
-}
-
-h4 {
-  font-size: 15px;
-  margin-bottom: 0.8rem;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
-  .secondary-footer {
-    display: none;
-  }
-
-  .primary-footer {
-
-    div {
-      width: 80%;
-
-      hr {
-        display: none;
-      }
-
-      .copyright-section {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .quick-nav-section {
-        display: block;
-
-        div {
-          width: 80%;
-          margin: 0 auto;
-        }
-
-        .icon-list-primary {
-          display: none;
-        }
-      }
-    }
-  }
+.logo.dark {
+  color: #939EA4;
+  background-color: transparent;
 }

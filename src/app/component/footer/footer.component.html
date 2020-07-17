@@ -1,81 +1,68 @@
 <footer>
-  <div class="secondary-footer">
-    <div>
-      <section class="about-section">
-        <img class="logo" src="/assets/corporate_arena.png" alt="Corporate Arenas">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, ipsum voluptatem. Ab aliquam consectetur
-          expedita laudantium magni maiores natus nesciunt porro quaerat veniam. Aperiam culpa deserunt dolor eveniet,
-          id illo iste neque pariatur, perferendis quisquam similique unde veniam veritatis voluptatum?</p>
-        <section class="icon-list">
-          <a href="">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-          <a href="">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-          <a href="">
-            <ion-icon name="logo-youtube"></ion-icon>
-          </a>
-          <a href="">
-            <ion-icon name="logo-dribbble"></ion-icon>
-          </a>
-        </section>
-      </section>
-      <section class="quick-links-section">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a routerLink="/">Home</a></li>
-          <li><a routerLink="/vacancies">Vacancies</a></li>
-          <li><a routerLink="/brain_teasers">Brain Teasers</a></li>
-          <li><a routerLink="/blog">Blog</a></li>
-          <li><a routerLink="/traffic_updates">Traffic Updates</a></li>
-          <li><a routerLink="/contact">Contact Us</a></li>
-        </ul>
-      </section>
-      <section class="contact-section">
-        <h4>Contact Us</h4>
-        <a href="tel:+2348081987023">(+234) 808 198 7023</a>
-        <a routerLink="/">www.corporatearenas.com</a>
-        <a href="mailto:corporateworldarena@gmail.com">corporateworldarena@gmail.com</a>
-      </section>
-      <section class="t-and-c-section">
-        <a href="">Terms and Conditions</a>
-        <a href="">F.A.Q</a>
-      </section>
+  <div class="container-fluid secondary-footer d-none d-md-block">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-3">
+          <img src="/assets/corporate_arena.png" alt="" class="img-fluid w-75">
+          <p class="text-justify my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi distinctio
+            doloribus eius error labore magnam minus natus nostrum perspiciatis quis?</p>
+          <div class="d-flex align-items-center">
+            <a href="#" class="logo facebook mr-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="logo twitter mr-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="logo youtube mr-3"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="logo dribble"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <ul class="list-unstyled ml-3">
+            <li class="mb-3"><a routerLink="/">Home</a></li>
+            <li class="mb-3"><a routerLink="/vacancies">Vacancies</a></li>
+            <li class="mb-3"><a routerLink="/brain_teasers">Brain Teasers</a></li>
+            <li class="mb-3"><a routerLink="/blog">Blog</a></li>
+            <li class="mb-3"><a routerLink="/traffic_updates">Traffic Updates</a></li>
+            <li><a routerLink="/contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 align-self-baseline">
+          <h4 class="font-weight-bold">Contact Us</h4>
+          <a href="tel:+2348081987023" class="d-block mb-3">(+234) 808 198 7023</a>
+          <a routerLink="/" class="d-block mb-3">www.corporatearenas.com</a>
+          <a href="mailto:corporateworldarena@gmail.com" class="d-block">corporateworldarena@gmail.com</a>
+        </div>
+        <div class="col-md-3 align-self-end">
+          <div class="ml-3">
+            <a href="" class="d-block mb-3">Terms and Conditions</a>
+            <a href="" class="d-block">F.A.Q</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="primary-footer">
-    <div>
-      <section class="copyright-section">
-        <span>&copy; Corporate Arenas {{ year | date : "yyyy" }}</span>
-        <img class="logo" src="/assets/corporate_arena.png" alt="Corporate Arenas">
-      </section>
-      <hr>
-      <section class="quick-nav-section">
-        <div>
-          <a routerLink="/">Home</a>
-          <a routerLink="/blog">Articles</a>
-          <a routerLink="/contact">Contact</a>
+  <div class="container-fluid primary-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">&copy; Corporate Arenas {{ year | date : "yyyy" }}</div>
+        <div class="col-md-9">
+          <img class="img-fluid w-25" src="/assets/corporate_arena.png" alt="Corporate Arenas">
         </div>
-        <div class="icon-list-primary">
-          <a href="">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-          <a href="">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-          <a href="">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-          <a href="">
-            <ion-icon name="logo-youtube"></ion-icon>
-          </a>
-          <a href="">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
+      </div>
+
+      <hr class="my-3">
+
+      <div class="row">
+        <div class="col-6 d-flex">
+          <a class="d-block px-3" routerLink="/">Home</a>
+          <a class="d-block px-3" routerLink="/blog">Articles</a>
+          <a class="d-block" routerLink="/contact">Contact</a>
         </div>
-      </section>
+        <div class="col-6">
+          <a href="#" class="logo dark mr-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="logo dark mr-3"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="logo dark mr-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="logo dark mr-3"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="logo dark"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
-
