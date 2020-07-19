@@ -4,6 +4,7 @@
   }
 
   .input {
+    position: relative;
     box-shadow: 10px 10px 16px #dee4ed, -10px -10px 16px #ffffff,
     inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #ffffff;
     border-radius: 10px;
@@ -14,11 +15,18 @@
       outline: none;
       background-color: transparent;
       border: 0;
-      font-size: 27px;
+      font-size: 20px;
       height: 100%;
     }
 
+    input:nth-child(1) {
+      width: 75%;
+    }
+
     .btn-purple {
+      position: absolute;
+      top: 0.7rem;
+      right: 0.5rem;
       background-color: #6f5ed8;
       border-radius: 10px;
       transition: all 500ms ease;

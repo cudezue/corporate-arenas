@@ -59,7 +59,6 @@
         background: #ffffff;
         border: 2px solid #b6bdfc;
         color: #6c63ff;
-        padding: 0.4rem 4rem;
         transition: all 500ms ease;
         border-radius: 10px;
 
@@ -97,7 +96,7 @@
 
   .container {
     background: rgba(246, 232, 253, 0.65);
-    padding: 5rem;
+    padding: 1.5rem;
 
     h2 {
       font-weight: 700;
@@ -106,8 +105,8 @@
 
   .polka-dots {
     position: absolute;
-    bottom: 0;
-    left: 15%;
+    bottom: -50px;
+    left: 2%;
   }
 }
 
@@ -121,7 +120,7 @@
   );
 
   .container {
-    padding: 5rem;
+    padding: 1.5rem;
 
     h2 {
       font-weight: 700;
