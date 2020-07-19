@@ -1,13 +1,13 @@
 .hero {
   h1 {
-    color: #37447E;
+    color: #37447e;
     font-weight: 700;
   }
 
   p {
     font-size: 15px;
     line-height: 30px;
-    color: #505F98;
+    color: #505f98;
   }
 
   a.btn {
@@ -17,11 +17,11 @@
 }
 
 .research-section {
-  background: linear-gradient(183.29deg, #FFFFFF 78.49%, #EEEEFF 120.83%);
+  background: linear-gradient(183.29deg, #ffffff 78.49%, #eeeeff 120.83%);
 
   h1 {
     font-weight: 700;
-    color: #091133
+    color: #091133;
   }
 
   .research-list {
@@ -29,8 +29,9 @@
 
     .research-card {
       min-width: 20rem;
-      background: linear-gradient(30.03deg, #F1F3F6 -2.87%, #FFFFFF 99.99%);
-      box-shadow: 10px 10px 36px #E7ECFF, -10px -10px 16px #FFFFFF, inset 4px 4px 4px rgba(231, 236, 255, 0.25), inset -4px -4px 8px #FFFFFF;
+      background: linear-gradient(30.03deg, #f1f3f6 -2.87%, #ffffff 99.99%);
+      box-shadow: 10px 10px 36px #e7ecff, -10px -10px 16px #ffffff,
+        inset 4px 4px 4px rgba(231, 236, 255, 0.25), inset -4px -4px 8px #ffffff;
       padding: 15rem 0.8rem 0.8rem;
       margin: 20px;
     }
@@ -46,7 +47,7 @@
 
       span {
         width: 7rem;
-        border-bottom: 5px solid #BE52F2;
+        border-bottom: 5px solid #be52f2;
         align-self: center;
       }
     }
@@ -55,16 +56,16 @@
   .img-slider {
     .controls {
       .btn {
-        background: #FFFFFF;
-        border: 2px solid #B6BDFC;
-        color: #6C63FF;
+        background: #ffffff;
+        border: 2px solid #b6bdfc;
+        color: #6c63ff;
         padding: 0.4rem 4rem;
         transition: all 500ms ease;
         border-radius: 10px;
 
         &:hover {
-          color: #FFFFFF;
-          background: #6C63FF;
+          color: #ffffff;
+          background: #6c63ff;
         }
       }
 
@@ -77,13 +78,13 @@
           height: 20px;
           border-radius: 50%;
           display: block;
-          background-color: #C4C4C4;
+          background-color: #c4c4c4;
           margin-right: 10px;
           cursor: pointer;
         }
 
         li.active {
-          background-color: #F4E7FC;
+          background-color: #f4e7fc;
         }
       }
     }
@@ -113,7 +114,11 @@
 .traffic-update-section {
   position: relative;
   margin: 4rem 0;
-  background: linear-gradient(180deg, rgba(231, 236, 255, 0.01) 0%, #F1F3F6 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(231, 236, 255, 0.01) 0%,
+    #f1f3f6 100%
+  );
 
   .container {
     padding: 5rem;

@@ -1,4 +1,4 @@
-$navColor: #505F98;
+$navColor: #505f98;
 
 .main {
   padding: 1rem 5rem;
@@ -11,6 +11,7 @@ $navColor: #505F98;
 .mobile {
   padding: 1rem 2rem;
   position: relative;
+  z-index: 9999;
 
   button {
     background: none;
@@ -34,4 +35,3 @@ $navColor: #505F98;
     }
   }
 }
-

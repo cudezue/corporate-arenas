@@ -17,7 +17,8 @@ body {
 }
 
 .answer-card {
-  box-shadow: 10px 10px 16px #DEE4ED, -10px -10px 16px #FFFFFF, inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #FFFFFF;
+  box-shadow: 10px 10px 16px #dee4ed, -10px -10px 16px #ffffff,
+    inset 4px 4px 4px rgba(222, 228, 237, 0.4), inset -4px -4px 8px #ffffff;
   padding: 1rem;
   border-radius: 10px;
 
@@ -32,7 +33,7 @@ body {
 
   .user {
     span {
-      color: #2A8BF2;
+      color: #2a8bf2;
     }
   }
 }
@@ -43,13 +44,14 @@ body {
   margin: 5rem 0;
 
   .input {
-    background: #FFFFFF;
+    background: #ffffff;
     border: 1px solid rgba(108, 99, 255, 0.42);
     box-sizing: border-box;
     border-radius: 5px;
     font-size: 15px;
     padding: 0.8rem 0.4rem;
-    input, textarea {
+    input,
+    textarea {
       outline: none;
       border: 0;
       background: transparent;
@@ -59,7 +61,7 @@ body {
   .btn {
     background: rgba(108, 99, 255, 0.25);
     border-radius: 10px;
-    color: #6C63FF;
+    color: #6c63ff;
     margin-top: 20px;
   }
 }
