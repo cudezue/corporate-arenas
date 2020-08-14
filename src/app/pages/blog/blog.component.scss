@@ -59,7 +59,8 @@
   box-shadow: 10px 10px 36px #e7ecff, -10px -10px 16px #ffffff,
     inset 4px 4px 4px rgba(231, 236, 255, 0.25), inset -4px -4px 8px #ffffff;
   border-radius: 10px;
-  cursor: pointer;
+  max-height: 30rem;
+  min-height: 30rem;
 
   img {
     max-width: 100%;
@@ -71,10 +72,21 @@
     margin: 0.8rem 0;
   }
 
+  h5 {
+    height: 5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
+
   p {
     color: #424058;
     font-size: 13px;
     margin: 0.8rem 0;
+    height: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
   }
 
   span {
